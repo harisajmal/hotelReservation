@@ -1,0 +1,26 @@
+﻿<Window x:Class="hotelReservation.WindowBookBedroom"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hotelReservation"
+        mc:Ignorable="d"
+        Title="WindowBookBedroom" Height="450" Width="800">
+    <Grid>
+        <ComboBox x:Name="cmbCustomers" HorizontalAlignment="Left" Margin="108,127,0,0" VerticalAlignment="Top" Width="161" Height="81"/>
+        <ComboBox x:Name="cmbBedroom" HorizontalAlignment="Left" Margin="392,127,0,0" VerticalAlignment="Top" Width="284" Height="81"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="126,264,0,0" VerticalAlignment="Top" Width="143" Height="78" Click="Button_Click_1" Background="#FFED4231" Foreground="#FFFAF2F2" FontSize="18" FontWeight="Bold"/>
+        <Button Content="Book &#xD;&#xA;Bedroom" HorizontalAlignment="Left" Margin="443,275,0,0" VerticalAlignment="Top" Width="114" Height="80" Click="Button_Click" Background="#FFED4231" Foreground="#FFFAF2F2" FontSize="18" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="165,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="96" Width="489" FontSize="24" FontWeight="Bold" FontFamily="MV Boli" Foreground="#FF293E2E"><Run Text="Choose Customer and Booking to Book ROOM">
+                <Run.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                        <GradientStop Color="#FF7CC0ED" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                        <GradientStop Color="#FFE9E9E9" Offset="0.652"/>
+                        <GradientStop Color="Silver" Offset="0.348"/>
+                    </LinearGradientBrush>
+                </Run.Background>
+            </Run></TextBlock>
+
+    </Grid>
+</Window>

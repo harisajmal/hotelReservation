@@ -1,0 +1,43 @@
+﻿<Window x:Class="hotelReservation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hotelReservation"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="488.5" Width="593">
+    <Window.BorderBrush>
+        <ImageBrush/>
+    </Window.BorderBrush>
+    <Grid Margin="0,0,16.333,17.667">
+        <Grid.Background>
+            <ImageBrush/>
+        </Grid.Background>
+        <Button x:Name="btnCancelBooking" Content="CANCEL&#xD;&#xA; BOOKING" HorizontalAlignment="Left" Margin="57,358,0,0" VerticalAlignment="Top" Width="129" Height="74" Click="btnCancelBooking_Click" Background="#FFED4231" FontSize="16" FontWeight="Bold" Foreground="#FFF7F1F1" FontFamily="Verdana Pro"/>
+        <Button x:Name="btnRoomBooking" Content="ROOM&#xD;&#xA; BOOKING" HorizontalAlignment="Left" Margin="57,262,0,0" VerticalAlignment="Top" Width="129" Height="74" Click="btnRoomBooking_Click" Background="#FFED4231" FontSize="16" FontWeight="Bold" Foreground="#FFF7F1F1" FontFamily="Verdana Pro"/>
+        <Button x:Name="btnAddCustomer" Content="Add&#xD;&#xA; Customer" HorizontalAlignment="Left" Margin="57,162,0,0" VerticalAlignment="Top" Width="126" Height="80" Click="btnAddCustomer_Click" RenderTransformOrigin="0.911,0.592" Background="#FFED4231" FontSize="16" FontWeight="Bold" Foreground="White" FontFamily="Verdana Pro"/>
+        <TextBox x:Name="txtOutput" HorizontalAlignment="Left" Height="170" Margin="227,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="319"/>
+        <Button x:Name="btnListCustomer" Content="List &#xD;&#xA;Customer" HorizontalAlignment="Left" Margin="227,141,0,0" VerticalAlignment="Top" Width="126" Height="80" Click="btnListCustomer_Click" RenderTransformOrigin="0.534,0.519" Background="#FFED4231" FontSize="16" FontWeight="Bold" Foreground="#FFF0F0F0" FontFamily="Verdana Pro"/>
+        <Button x:Name="btnListBooking" Content="List Rooms and &#xD;&#xA;Bookings" HorizontalAlignment="Left" Margin="404,141,0,0" VerticalAlignment="Top" Width="142" Height="80" Click="btnListBooking_Click" Background="#FFED4231" FontSize="16" FontWeight="Bold" Foreground="#FFF7F1F1" FontFamily="Verdana Pro"/>
+        <TextBlock HorizontalAlignment="Left" Margin="57,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="96" Width="489" FontSize="24" FontWeight="Bold" FontFamily="MV Boli" Foreground="#FF293E2E"><Run Text="SIMPLY HOTELIERS&#x9;">
+                <Run.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                        <GradientStop Color="#FF7CC0ED" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                        <GradientStop Color="#FFE9E9E9" Offset="0.652"/>
+                        <GradientStop Color="Silver" Offset="0.348"/>
+                    </LinearGradientBrush>
+                </Run.Background>
+            </Run><LineBreak/><Run Text="ROOM RESERVATION SYSTEM">
+                <Run.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                        <GradientStop Color="#FF7CC0ED" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                        <GradientStop Color="#FFE9E9E9" Offset="0.652"/>
+                        <GradientStop Color="Silver" Offset="0.348"/>
+                    </LinearGradientBrush>
+                </Run.Background>
+            </Run></TextBlock>
+
+    </Grid>
+</Window>

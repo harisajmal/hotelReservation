@@ -1,0 +1,58 @@
+﻿<Window x:Class="hotelReservation.bookConferenceRoom"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hotelReservation"
+        mc:Ignorable="d"
+        Title="bookConferenceRoom" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="141,264,0,0" VerticalAlignment="Top" Width="105" Height="82" Click="btnCancel_Click" Background="#FFED4231" FontSize="20" Foreground="#FFE9E9E9" FontWeight="Bold"/>
+        <Button x:Name="btnBookConferenceRoom" Content="Book Conference Room" HorizontalAlignment="Left" Margin="412,264,0,0" VerticalAlignment="Top" Width="242" Height="82" Click="btnBookConferenceRoom_Click" Background="#FFED4231" FontSize="20" Foreground="#FFE9E9E9" FontWeight="Bold"/>
+        <ComboBox x:Name="cmbCustomers" HorizontalAlignment="Left" Margin="141,131,0,0" VerticalAlignment="Top" Width="154" Height="84">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FF7CC0ED" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+        </ComboBox>
+        <ComboBox x:Name="cmbConferenceroom" HorizontalAlignment="Left" Margin="412,131,0,0" VerticalAlignment="Top" Width="330" Height="84">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FF7CC0ED" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="165,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="96" Width="489" FontSize="24" FontWeight="Bold" FontFamily="MV Boli" Foreground="#FF293E2E"><Run Text="Choose Customer and ">
+                <Run.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                        <GradientStop Color="#FF7CC0ED" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                        <GradientStop Color="#FFE9E9E9" Offset="0.652"/>
+                        <GradientStop Color="Silver" Offset="0.348"/>
+                    </LinearGradientBrush>
+                </Run.Background>
+            </Run><Run Text="Room">
+                <Run.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                        <GradientStop Color="#FF7CC0ED" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                        <GradientStop Color="#FFE9E9E9" Offset="0.652"/>
+                        <GradientStop Color="Silver" Offset="0.348"/>
+                    </LinearGradientBrush>
+                </Run.Background>
+            </Run><Run Text="to Book ROOM">
+                <Run.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                        <GradientStop Color="#FF7CC0ED" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                        <GradientStop Color="#FFE9E9E9" Offset="0.652"/>
+                        <GradientStop Color="Silver" Offset="0.348"/>
+                    </LinearGradientBrush>
+                </Run.Background>
+            </Run></TextBlock>
+
+    </Grid>
+</Window>
